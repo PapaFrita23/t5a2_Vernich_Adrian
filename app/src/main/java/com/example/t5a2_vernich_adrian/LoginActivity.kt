@@ -1,9 +1,11 @@
-package com.example.t4a2_vernich_adrian
+package com.example.t5a2_vernich_adrian
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.t5a2_vernich_adrian.databinding.ActivityWelcomeBinding
+import com.example.t5a2_vernich_adrian.databinding.ActivityMainBinding
 import com.example.t5a2_vernich_adrian.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
