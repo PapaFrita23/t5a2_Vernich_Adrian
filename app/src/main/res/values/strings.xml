@@ -4,9 +4,11 @@
     <string name="global">GLOBAL POSITION</string>
     <string name="text">Welcome</string>
     <string name="movement">MOVEMENTS</string>
-    <string name="transference">TRANSFERENCE</string>
+    <string name="transference">TRANSFERENCES</string>
     <string name="password">CHANGE PASSWORD</string>
     <string name="promotion">PROMOTIONS</string>
     <string name="cashiers">CASHIERS</string>
     <string name="exit">EXIT</string>
+    <string name="banco">Bank</string>
+    <string name="choose_acount">Choose your account:</string>
 </resources>

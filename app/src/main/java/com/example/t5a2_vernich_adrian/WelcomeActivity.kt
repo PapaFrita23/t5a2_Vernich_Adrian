@@ -21,5 +21,9 @@ class WelcomeActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        binding.btnSalidaApp.setOnClickListener() {
+            finish()
+        }
     }
 }

@@ -8,4 +8,6 @@
     <string name="promotion">PROMOCIONES</string>
     <string name="cashiers">CAJEROS</string>
     <string name="exit">SALIR</string>
+    <string name="banco">Banco</string>
+    <string name="choose_acount">Elige tu cuenta:</string>
 </resources>

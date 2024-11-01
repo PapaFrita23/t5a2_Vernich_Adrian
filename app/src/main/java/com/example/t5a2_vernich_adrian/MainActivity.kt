@@ -31,6 +31,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnSalirApp.setOnClickListener {
+            val intent = Intent(this, WelcomeActivity::class.java)
+            startActivity(intent)
             finish()
         }
     }
