@@ -39,8 +39,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lyMenu"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@id/lyMenu" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cdTransferencia"
@@ -53,31 +52,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/txtCuenta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/choose_acount"/>
-
         <LinearLayout
             android:id="@+id/lyTransferencia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@id/txtCuenta"
             android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtCuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_acount" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp" />
 
             <RadioButton
                 android:id="@+id/btnCuentaP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cuenta propia"/>
+                android:text="Cuenta propia" />
 
             <RadioButton
                 android:id="@+id/btnCuentaA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cuenta ajena"/>
+                android:text="Cuenta ajena" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,7 +27,6 @@ class LoginActivity : AppCompatActivity() {
         binding.btnTransferencia.setOnClickListener {
             val intent = Intent(this, TransferActivity::class.java)
             startActivity(intent)
-            finish()
         }
     }
 }
