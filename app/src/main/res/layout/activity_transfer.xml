@@ -66,22 +66,105 @@
                 android:text="@string/choose_acount" />
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/spnCuenta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp" />
 
-            <RadioButton
-                android:id="@+id/btnCuentaP"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cuenta propia" />
+                android:orientation="horizontal"
+                android:layout_margin="32dp">
 
-            <RadioButton
-                android:id="@+id/btnCuentaA"
+                <RadioButton
+                    android:id="@+id/btnCuentaP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cuenta propia" />
+
+                <RadioButton
+                    android:id="@+id/btnCuentaA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cuenta ajena" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spnCuentaP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp" />
+            <EditText
+                android:id="@+id/editTextCuentaDestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Introduce cuenta destino"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:visibility="gone" />
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cuenta ajena" />
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtCantidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad:" />
+
+                <EditText
+                    android:id="@+id/txtDinero"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/txtCantidad" />
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="57dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkboxJustificante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="70dp"
+                android:text="Enviar justificante" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="24dp">
+
+                <Button
+                    android:id="@+id/btnEnviar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ENVIAR"
+                    android:backgroundTint="@color/green"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnCancelar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="CANCELAR"
+                    android:backgroundTint="@color/green"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

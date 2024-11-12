@@ -17,4 +17,8 @@
         <item>ES50-6420-1692-30-1234567891</item>
         <item>ES90-1479-1793-60-1234567891</item>
     </string-array>
+    <string-array name="money">
+        <item>€</item>
+        <item>$</item>
+    </string-array>
 </resources>
